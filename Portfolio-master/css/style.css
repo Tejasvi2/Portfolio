@@ -453,8 +453,18 @@ a.active
 
  	#backstyle3
  	{
- 		display:none;
+  width: 100vw;
+  height: 100vw;
+  background-size: cover;
+  min-height:800px;
+  background-size: 100% 100%;
+
+  
  	}
+  blockquote p
+  {
+    margin-right:23%;
+  }
  	.maintitle
  	{
  		font-size:1.5rem !important;
@@ -476,6 +486,10 @@ a.active
     padding:20px;
 
   }
+  .img-right
+  {
+    margin-right:20%;
+  }
   .box:last-child
   {
     display: none;
@@ -484,7 +498,7 @@ a.active
   .myimg-text
   {
      	
-    font-weight:200;
+    font-weight:300;
     max-width:100%;
     color:#b71c1c;
     line-height:1.2;
@@ -496,9 +510,11 @@ a.active
   }
   .myimg
   {
-   width:180px;
+   width:130px;
   	height: 180px;
+    margin:1px;
   }
+
   .myh1,.myh2
   {
   	font-size:20px;
@@ -507,7 +523,7 @@ a.active
   {
   	padding:10px;
     line-height:0.9;
-    font-size:0.9rem !important;
+    font-size:0.8rem !important;
   }
 
   .timeline-holder::before
