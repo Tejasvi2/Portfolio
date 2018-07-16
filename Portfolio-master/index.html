@@ -7,6 +7,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="css/style.css">
+
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
  <!-- Material animation links -->
  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/css/mdb.min.css" rel="stylesheet">
@@ -14,6 +15,7 @@
   <!-- Manimation links when scrolling -->
  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script src="js/init.js"></script>
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<title>Tejasvi shinde</title>
 </head>
@@ -122,23 +124,6 @@
     </div>
 </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <hr class="style-two">
 
 
@@ -184,9 +169,9 @@
 <hr class="style-two">
 
  
-<div id="bigYellowCircle" ></div>
-<div id="blueSquare"></div>
-<div id="greenPentagon"></div>
+<div id="backstyle3" ></div>
+<div id="backstyle1"></div>
+<div id="backstyle2"></div>
  
 <div>
 	<div class="row">
@@ -248,41 +233,17 @@ Student-Teacher Coordinator, CSI Council(Company Society of India).
 	
 
    <div class="footer">
-  <a href="https://www.facebook.com/tejasvi.shinde.1" class="active" rel="external" target="_blank"> <i class="fa fa-facebook-square" style="font-size:20px"></i></a>
-   <a href="https://github.com/Tejasvi2" rel="external" class="active" target="_blank"><i class="fa fa-github" style="font-size:20px"></i></a>
+  <a href="https://www.facebook.com/tejasvi.shinde.1" class="active footer-logo" rel="external" target="_blank"> <i class="fa fa-facebook-square"></i></a>
+   <a href="https://github.com/Tejasvi2" rel="external" class="active footer-logo" target="_blank"><i class="fa fa-github"></i></a>
 
-  <a href="https://www.instagram.com/s_tejasvi"  class="active" rel="external" target="_blank"> <i class="fa fa-instagram" style="font-size:20px"></i></a>
+  <a href="https://www.instagram.com/s_tejasvi"  class="active footer-logo" rel="external" target="_blank"> <i class="fa fa-instagram"></i></a>
 
    </div>
 
 	<script type="text/javascript">
-	//whithout this line it will not work
-		new WOW().init();
-		var bigYellowCircle = document.querySelector("#bigYellowCircle");
-    var blueSquare = document.querySelector("#blueSquare");
-    var greenPentagon = document.querySelector("#greenPentagon");
- 
-    function setTranslate(xPos, yPos, el) {
-        el.style.transform = "translate3d(" + xPos + ", " + yPos + "px, 0)";
-    }
- 
-    window.addEventListener("DOMContentLoaded", scrollLoop, false);
- 
-    var xScrollPosition;
-    var yScrollPosition;
- 
-    function scrollLoop() {
-        xScrollPosition = window.scrollX;
-        yScrollPosition = window.scrollY;
- 
-        setTranslate(0, yScrollPosition * -0.2, bigYellowCircle);
-        setTranslate(0, yScrollPosition * -4.5, blueSquare);
-        setTranslate(0, yScrollPosition * .5, greenPentagon);
- 
-        requestAnimationFrame(scrollLoop);
-    }
-     $('#open-left').click(function(e){
-  e.preventDefault();
+	
+    $('#open-left').click(function(e){
+    e.preventDefault();
     $('.split-screen-left').velocity({ translateX: ["50%"]  }, 800);
 	$('.split-screen-right').velocity({translateX: ["50%"] }, 800);
 	
@@ -295,8 +256,8 @@ Student-Teacher Coordinator, CSI Council(Company Society of India).
 	$(this).velocity({opacity: [0, 1] }, 200);
 })
 
-$('#open-right').click(function(e){
-  e.preventDefault();
+    $('#open-right').click(function(e){
+    e.preventDefault();
     $('.split-screen-left').velocity({ translateX: ["-50%"]  }, 800);
 	$('.split-screen-right').velocity({translateX: ["-50%"] }, 800);
 	
@@ -309,8 +270,8 @@ $('#open-right').click(function(e){
 	$(this).velocity({opacity: [0, 1] }, 200);
 })
 
-$('.close-left').click(function(){
-	 $('.split-screen-left').velocity({ translateX: 0  }, 800);
+    $('.close-left').click(function(){
+	$('.split-screen-left').velocity({ translateX: 0  }, 800);
 	$('.split-screen-right').velocity({translateX: 0 }, 800);
 	
 	$('#profile-1-text').velocity({width: ['50%', "60%"] }, 800);
@@ -326,8 +287,8 @@ $('.close-left').click(function(){
 	
 })
 
-$('.close-right').click(function(){
-	 $('.split-screen-left').velocity({ translateX: 0  }, 800);
+    $('.close-right').click(function(){
+	$('.split-screen-left').velocity({ translateX: 0  }, 800);
 	$('.split-screen-right').velocity({translateX: 0 }, 800);
 	
 	$('#profile-2-text').velocity({width: ['50%', "60%"] }, 800);
