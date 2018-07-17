@@ -528,9 +528,13 @@ a.active
     margin:1px;
   }
 
-  .myh1,.myh2
+  .myh1,.myh2,.myh1-right
   {
   	font-size:20px;
+  }
+  .split-whatido
+  {
+    font-size:1rem !important;
   }
   .myp
   {
